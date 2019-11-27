@@ -23,7 +23,7 @@ for running this presentation:
 
 Optional: ...with image support (only required for 1 demo slide):
 
-- [`kitty` terminal](https://sw.kovidgoyal.net/kitty/#)
+- [`kitty` terminal: https://sw.kovidgoyal.net/kitty/](https://sw.kovidgoyal.net/kitty/#)
   - if you run into trouble: try removing the image support & demo slide containing an image:
     - delete the `images` section from `slides.md` (`patat` section at the beginning of the file)
     - delete the slide with `![softwerkskammer-logo](images/Softwerkskammer.png)`
