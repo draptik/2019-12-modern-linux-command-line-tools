@@ -211,9 +211,9 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 # PS1: **liquidprompt**
 
-- available for `zsh`, `bash`, etc
-
 - https://github.com/nojhan/liquidprompt
+
+- available for `zsh`, `bash`, etc
 
 - category: unix-porn
 
@@ -221,11 +221,11 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 # PS1: **Powerline**
 
+- https://github.com/powerline/powerline
+
 - started as fancy statusline for `vim`...
 
 - available for `zsh`, `bash`, etc
-
-- https://github.com/powerline/powerline
 
 - category: unix-porn
 
