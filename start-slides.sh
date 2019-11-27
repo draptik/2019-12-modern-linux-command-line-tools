@@ -1,5 +1,11 @@
-#!/bin/sh
-~/.config/kitty/switch-to-solarized-light.sh
+#!/bin/bash
+START_PRESENTATION='patat slides.md'
 
-kitty --start-as=fullscreen patat slides.md
+KITTY=`which kitty`
+KITTY_CONFIG=~/.config/kitty/switch-to-solarized-light.sh1
 
+if [[ -f "$KITTY_CONFIG" ]]; then
+    "${KITTY}" --start-as=fullscreen $START_PRESENTATION
+else
+    $START_PRESENTATION
+fi
