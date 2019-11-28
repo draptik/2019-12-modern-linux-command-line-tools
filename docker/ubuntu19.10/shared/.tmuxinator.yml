@@ -1,0 +1,31 @@
+# ./.tmuxinator.yml
+
+name: cli-talk
+root: .
+
+#tmux_options: -f .tmux-for-demo.conf
+
+tmux_command: byobu
+
+
+windows:
+    - empty:
+        - cd ~
+        - clear
+    - ranger:
+        - cd ~
+        - clear
+        - echo "ranger"
+    - bat:
+        - clear
+        - echo "bat slides.md"
+    - (porn) colorls:
+        - clear
+        - echo "lc"
+    - (porn) lolcat:
+        - clear
+        - echo "la | lolcat"
+    - (porn) no-more-secrets:
+        - clear
+        - echo "la | nms | lolcat"
+

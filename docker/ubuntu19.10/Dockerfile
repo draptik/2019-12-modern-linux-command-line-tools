@@ -1,8 +1,6 @@
 FROM ubuntu:19.10
 
-RUN apt-get update && apt-get upgrade -y
-
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y \
     bash \
     git \
     wget \
@@ -20,7 +18,8 @@ RUN apt-get install -y \
     fzf \
     bat \
     ruby-dev \
-    ruby-colorize
+    ruby-colorize \
+    libncurses5-dev libncursesw5-dev # NOTE: *ncurses* libs are needed for `no-more-secrets`
 
 # python
 RUN pip3 install \
@@ -32,16 +31,23 @@ RUN gem install \
     tmuxinator \
     colorls
 
+# nms (no-more-secrets)
+RUN git clone https://github.com/bartobri/no-more-secrets.git && \
+    cd ./no-more-secrets && \
+    make nms-ncurses && \
+    make sneakers-ncurses && \
+    make install
+
 # add non-root user "homer"
 RUN useradd -ms /bin/bash homer
 USER homer
 WORKDIR /home/homer
 
 # Powerline
-COPY shared/powerline-install.sh powerline-install.sh
+COPY --chown=homer:homer shared/powerline-install.sh powerline-install.sh
 RUN sh powerline-install.sh
 
-COPY shared/powerline-setup.sh powerline-setup.sh
+COPY --chown=homer:homer shared/powerline-setup.sh powerline-setup.sh
 RUN cat powerline-setup.sh >> .bashrc
 
 # colorls
@@ -49,3 +55,12 @@ RUN cat powerline-setup.sh >> .bashrc
 
 # reload .bashrc
 RUN sh . .bashrc
+
+# tmuxinator setup
+COPY --chown=homer:homer shared/.tmux-for-demo.conf .tmux-for-demo.conf
+COPY --chown=homer:homer shared/.tmuxinator.yml .tmuxinator.yml
+COPY --chown=homer:homer shared/start-demos.sh start-demos.sh
+
+# TODO
+# - ranger configs
+# - tmuxinator with byobu: show infos at top, not at bottom
