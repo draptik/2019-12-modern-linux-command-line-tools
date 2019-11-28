@@ -6,10 +6,15 @@ Without messing up there own system.
 
 Using docker.
 
+The docker container size: ~700MB (based on Ubuntu 19.10)
+
 # Usage
 
-- run `build-container.sh`
-- run `run-container.sh`
+```sh
+./build-container.sh
+./run-container.sh
+./start-demos.sh
+```
 
 # TODOs
 
