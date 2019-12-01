@@ -74,6 +74,10 @@ COPY --chown=homer:homer shared/.tmux-for-demo.conf .tmux-for-demo.conf
 COPY --chown=homer:homer shared/.tmuxinator.yml .tmuxinator.yml
 COPY --chown=homer:homer shared/start-demos.sh start-demos.sh
 
+# christmas-tree
+COPY --chown=homer:homer shared/christmas-tree.sh christmas-tree.sh
+
+
 # TODO
-# - ranger configs
-# - tmuxinator with byobu: show infos at top, not at bottom
+# - [ ] ranger configs
+# - [ ] NICE-TO-HAVE tmuxinator with byobu: show infos at top, not at bottom

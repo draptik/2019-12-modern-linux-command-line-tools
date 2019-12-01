@@ -29,4 +29,7 @@ windows:
     - (porn) no-more-secrets:
         - clear
         - echo "la | nms | lolcat"
+    - christmas-tree:
+        - clear
+        - ./christmas-tree.sh
 
