@@ -19,6 +19,8 @@ RUN apt-get update && apt-get install -y \
     bat \
     ruby-dev \
     ruby-colorize \
+    boxes \
+    pydf \
     libncurses5-dev libncursesw5-dev # NOTE: *ncurses* libs are needed for `no-more-secrets`
 
 # python
@@ -41,6 +43,10 @@ RUN git clone https://github.com/bartobri/no-more-secrets.git && \
     make nms-ncurses && \
     make sneakers-ncurses && \
     make install
+
+# hyperfine
+RUN wget https://github.com/sharkdp/hyperfine/releases/download/v1.9.0/hyperfine_1.9.0_amd64.deb && \
+    dpkg -i hyperfine_1.9.0_amd64.deb
 
 # ---------------------------------------------------------
 # add non-root user "homer"

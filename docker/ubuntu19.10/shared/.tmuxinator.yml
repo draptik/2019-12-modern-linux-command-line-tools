@@ -12,6 +12,7 @@ windows:
     - empty:
         - cd ~
         - clear
+        - echo -e "\nHallo Softwerkskammer" | boxes -d peek -a hcvc
     - ranger:
         - cd ~
         - clear
