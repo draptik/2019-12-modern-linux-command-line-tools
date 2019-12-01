@@ -245,9 +245,24 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 - category: productivity
 
+```text
+   _________________________________
+  /                                 \
+  |    ...a personal favorite...    |
+  \______________________________ '\
+                             ()    \\
+                               O    \\  .
+                                 o  |\\/|
+                                    / " '\
+                                    . .   .
+                                   /    ) |
+                                  '  _.'  |
+                                  '-'/    \
+```
+
 ---
 
-# **Ranger**
+# **ranger**
 
 - https://ranger.github.io
 
@@ -256,15 +271,12 @@ I've come up with a set of rules that describe our reactions to technologies:
 - 2 layout options
     - miller columns
     - multipane (similar to Midnight commander)
-
 - powerful preview mode and program launcher (word, music, ...)
-
     - with image support for certain terminals
         - `iterms2`
         - `urxvt`
         - `kitty`
         - not `gnome-terminal` (!)
-
 - key bindings: see `~/.config/ranger/rc.conf` starting at line 300...
 
 - category: navigation, file system
@@ -294,13 +306,28 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 - category: read / file display
 
+```text
+   _________________________________
+  /                                 \
+  |    daily usage                  |
+  \______________________________ '\
+                             ()    \\
+                               O    \\  .
+                                 o  |\\/|
+                                    / " '\
+                                    . .   .
+                                   /    ) |
+                                  '  _.'  |
+                                  '-'/    \
+```
+
 ---
 
 # **fzf**
 
 - https://github.com/junegunn/fzf
 
-- fuzzy search
+- interactive fuzzy search
 - `find * -type f | fzf`
 - see `locate` for a static indexer
 - category: search
@@ -406,7 +433,7 @@ hyperfine --warmup 3 'fd '.*[0-9]\.jpg$' Documents/talks' 'find Documents/talks 
            `~~`\ ' . /`~~`
            ,::: ;   ; :::,
           ':::::::::::::::'
- _____jgs______/_ __ \_____________
+ ______________/_ __ \_____________
 |                                  |
 |               ttyd               |
 | share your terminal over the web |
@@ -426,6 +453,16 @@ echo -e "ttyd\nshare your terminal over the web" | boxes -d nuke -a c
 - https://github.com/bartobri/no-more-secrets
 
 - when the tv team comes in your office
+
+- category: fun, unix porn
+
+---
+
+# **sl**
+
+- https://github.com/mtoyoda/sl
+
+ typo `sl` instead of `ls` -> show steam locomotive
 
 - category: fun, unix porn
 
@@ -477,6 +514,21 @@ let foo = "bar";
 
 - category: unix porn
 
+```text
+   _________________________________
+  /                                 \
+  |    daily usage                  |
+  \______________________________ '\
+                             ()    \\
+                               O    \\  .
+                                 o  |\\/|
+                                    / " '\
+                                    . .   .
+                                   /    ) |
+                                  '  _.'  |
+                                  '-'/    \
+```
+
 ---
 
 # **pydf**
@@ -497,6 +549,36 @@ let foo = "bar";
 
 ---
 
+# Resources
+
+- https://twitter.com/climagic
+- https://twitter.com/nixcraft
+
+---
+
 # END
 
-- did I miss your favorite tool?
+```text
+               .-"``"-.
+              /______; \
+             {_______}\|
+             (/ a a \)(_)
+             (.-.).-.)
+  _____ooo__(    ^    )_________
+ /           '-.___.-'          \
+|                                |
+| did I miss your favorite tool? |
+|                                |
+ \______________________ooo_____/
+             |_  |  _|
+             \___|___/
+             {___|___}
+              |_ | _|
+              /-'Y'-\
+             (__/ \__)
+
+```
+
+<!--
+echo -e "did I miss your favorite tool?" | boxes -d santa -a c
+-->
