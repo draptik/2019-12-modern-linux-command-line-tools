@@ -16,19 +16,23 @@ windows:
     - empty:
         - cd ~
         - clear
+        - echo -e "\nHallo Softwerkskammer" | boxes -d peek -a hcvc
     - ranger:
         - cd ~
         - clear
-        - echo "ranger"
+        - echo -e "\nranger" | boxes -d peek -a hcvc
     - bat:
         - clear
-        - echo "bat slides.md"
+        - echo -e "\nbat slides.md" | boxes -d peek -a hcvc
     - (porn) colorls:
         - clear
-        - echo "lc"
+        - echo -e "\nlc" | boxes -d peek -a hcvc
     - (porn) lolcat:
         - clear
-        - echo "la | lolcat"
+        - echo -e "\nla | lolcat" | boxes -d peek -a hcvc
     - (porn) no-more-secrets:
         - clear
-        - echo "la | nms | lolcat"
+        - echo -e "\nla | nms | lolcat" | boxes -d peek -a hcvc
+    - christmas-tree:
+        - clear
+        - ./christmas-tree.sh
