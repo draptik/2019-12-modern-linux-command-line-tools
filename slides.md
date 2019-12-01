@@ -435,6 +435,24 @@ let foo = "bar";
 
 ---
 
+# **pydf**
+
+- https://www.cyberciti.biz/tips/unix-linux-bsd-pydf-command-in-colours.html
+
+- colorized `df` alternative
+
+---
+
+# **boxes**
+
+- https://boxes.thomasjensen.com/docs/
+
+- ascii art boxes
+
+- category: unix porn
+
+---
+
 # END
 
 - did I miss your favorite tool?

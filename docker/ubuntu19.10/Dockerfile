@@ -14,6 +14,9 @@ RUN apt-get update && apt-get install -y \
     tmux \
     byobu \
     ranger \
+    highlight \
+    odt2txt \
+    jq \
     fd-find \
     fzf \
     bat \
@@ -66,18 +69,33 @@ RUN cat powerline-setup.sh >> .bashrc
 # colorls
 # Nerdfonts (the consuming shell/terminal must have the font installed!)
 
-# reload .bashrc
-RUN sh . .bashrc
+# christmas-tree
+COPY --chown=homer:homer shared/christmas-tree.sh christmas-tree.sh
+
+# ranger configs
+COPY --chown=homer:homer .dotfiles/.config/ranger/* .config/ranger/
 
 # tmuxinator setup
 COPY --chown=homer:homer shared/.tmux-for-demo.conf .tmux-for-demo.conf
 COPY --chown=homer:homer shared/.tmuxinator.yml .tmuxinator.yml
+COPY --chown=homer:homer shared/.tmuxinator-light.yml .tmuxinator-light.yml
 COPY --chown=homer:homer shared/start-demos.sh start-demos.sh
+COPY --chown=homer:homer shared/start-demos-light.sh start-demos-light.sh
 
-# christmas-tree
-COPY --chown=homer:homer shared/christmas-tree.sh christmas-tree.sh
+# .bash_aliases
+COPY --chown=homer:homer .dotfiles/.bash_aliases .bash_aliases
 
+# reload .bashrc
+RUN sh . .bashrc
 
 # TODO
-# - [ ] ranger configs
-# - [ ] NICE-TO-HAVE tmuxinator with byobu: show infos at top, not at bottom
+#
+# - config for ubuntu:
+#
+#   - DONE bat: dark background; light background
+#   - DONE fd: add alias: default ubuntu uses `fdfind`
+#   - DONE ranger: add configs and theme switching scripts
+#   - DONE ranger: text file preview syntax highlighting is missing
+#   - TODO fzf: demos with images
+#
+# - NICE-TO-HAVE tmuxinator with byobu: show infos at top, not at bottom
