@@ -118,7 +118,7 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 # Learn the basics
 
-- have knowledge of the **editor war** 
+- have knowledge of the **editor war**
     - https://en.wikipedia.org/wiki/Editor_war
     - (`spacemacs` http://spacemacs.org/)
 
@@ -257,13 +257,15 @@ I've come up with a set of rules that describe our reactions to technologies:
     - miller columns
     - multipane (similar to Midnight commander)
 
-- key bindings: see `~/.config/ranger/rc.conf` starting at line 300...
+- powerful preview mode and program launcher (word, music, ...)
 
-- with image support for certain terminals
-    - `iterms2`
-    - `urxvt`
-    - `kitty`
-    - not `gnome-terminal` (!)
+    - with image support for certain terminals
+        - `iterms2`
+        - `urxvt`
+        - `kitty`
+        - not `gnome-terminal` (!)
+
+- key bindings: see `~/.config/ranger/rc.conf` starting at line 300...
 
 - category: navigation, file system
 
@@ -327,6 +329,8 @@ I've come up with a set of rules that describe our reactions to technologies:
     - Regular expressions.
     - Unicode-awareness.
 
+- fast
+
 - category: search
 
 <!--
@@ -334,6 +338,29 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 - TODO
 -->
+
+---
+
+# **hyperfine**
+
+- https://github.com/sharkdp/hyperfine
+
+- benchmarking tool
+
+```bash
+# comparing `fd` with `find`
+
+# ubuntu uses `fdfind` by default
+hyperfine --warmup 3 'fdfind -HI '.*[0-9]\.jpg$'' 'find ~ -iregex '.*[0-9]\.jpg''
+
+# arch
+hyperfine --warmup 3 'fd -HI '.*[0-9]\.jpg$' Documents/talks' 'find Documents/talks -iregex '.*[0-9]\.jpg$''
+
+# unfair comparison: `fd` ignores hidden files and `.git` be default
+hyperfine --warmup 3 'fd '.*[0-9]\.jpg$' Documents/talks' 'find Documents/talks -iregex '.*[0-9]\.jpg$''
+```
+
+- category: benchmarking
 
 ---
 
@@ -371,9 +398,26 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 - https://tsl0922.github.io/ttyd/
 
-- share your terminal over the web
+```text
+            _ ._  _ , _ ._
+          (_ ' ( `  )_  .__)
+        ( (  (    )   `)  ) _)
+       (__ (_   (_ . _) _) ,__)
+           `~~`\ ' . /`~~`
+           ,::: ;   ; :::,
+          ':::::::::::::::'
+ _____jgs______/_ __ \_____________
+|                                  |
+|               ttyd               |
+| share your terminal over the web |
+|__________________________________|
+```
 
 - category: network, dangerous
+
+<!--
+echo -e "ttyd\nshare your terminal over the web" | boxes -d nuke -a c
+-->
 
 ---
 
