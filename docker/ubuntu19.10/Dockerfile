@@ -75,6 +75,9 @@ COPY --chown=homer:homer shared/christmas-tree.sh christmas-tree.sh
 # ranger configs
 COPY --chown=homer:homer .dotfiles/.config/ranger/* .config/ranger/
 
+# ranger demos
+COPY shared/demo-files-for-preview/* demo-files/
+
 # tmuxinator setup
 COPY --chown=homer:homer shared/.tmux-for-demo.conf .tmux-for-demo.conf
 COPY --chown=homer:homer shared/.tmuxinator.yml .tmuxinator.yml
