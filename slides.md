@@ -254,6 +254,11 @@ I've come up with a set of rules that describe our reactions to technologies:
            (_/
 ```
 
+```sh
+#rg <searchterm>
+rg /bin
+```
+
 ---
 
 # **byobu**
