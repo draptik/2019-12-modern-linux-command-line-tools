@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y \
     ruby-colorize \
     boxes \
     pydf \
+    ripgrep \
     libncurses5-dev libncursesw5-dev # NOTE: *ncurses* libs are needed for `no-more-secrets`
 
 # python

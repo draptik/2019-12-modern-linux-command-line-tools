@@ -231,6 +231,31 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 ---
 
+# **ripgrep**
+
+- https://github.com/BurntSushi/ripgrep
+
+- `ripgrep` (17k stars) recursively searches directories for a regex pattern
+
+- not POSIX-conform...
+
+```text
+       \\\///
+      / _  _ \
+    (| (.)(.) |)
+.-.OOOo--()--oOOO.-.
+|                  |
+|   Power-Tool!    |
+|                  |
+'-.oooO------------'
+   (   )   Oooo.
+    \ (    (   )
+     \_)    ) /
+           (_/
+```
+
+---
+
 # **byobu**
 
 - http://byobu.co/
