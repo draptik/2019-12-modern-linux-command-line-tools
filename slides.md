@@ -6,6 +6,7 @@ patat:
         - patat_extensions
         - autolink_bare_uris
         - emoji
+        - hard_line_breaks
     incrementalLists: false
     wrap: true
     margins:
@@ -22,18 +23,9 @@ patat:
 ---
 
 <!--
-
-# Patat demos
-
-## Emojis
-
-- requires `pandocExtensions: emoji`
 - use Emoji Shortcodes: https://www.webfx.com/tools/emoji-cheat-sheet/
-- Examples: :smiley:, :thumbsup:, :white_check_mark:, :heavy_check_mark:, :ballot_box_with_check:, :collision:
-
-## Ascii art generator
-
-- http://patorjk.com/software/taag/
+  - Examples: :smiley:, :thumbsup:, :white_check_mark:, :heavy_check_mark:, :ballot_box_with_check:, :collision:
+- Ascii art generator: http://patorjk.com/software/taag/
 -->
 
 ```text
@@ -126,19 +118,21 @@ I've come up with a set of rules that describe our reactions to technologies:
     - learn navigation, copy & paste, (and how to exit :thumbsup:)
     - pick one and become fluent
 
-- `cat`, `less`, `find`, `grep`, `sed`, `tail`, `awk`, `dd`, `rsync`, ...
+- `cd`, `ls`, `cat`, `less`, `find`, `grep`, `sed`, `tail`, `awk`, `dd`, `rsync`, ...
 
 ---
 
 # shells
-
-**...there is no "best shell"...**
 
 - `bash`
 
 - `zsh`
 
 - `fish`
+
+- `dash`, and many more...
+
+**...there is no "best shell"...**
 
 ---
 
@@ -157,19 +151,42 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 - **everything else** (f.ex. **`PS1`**, scripting language)
 
+```text
++--------------------+
+|     "terminal"     |
++--------------------+
+|                    |
+|      "shell"       |
+|                    |
++--------------------+
+```
+
 ---
 
 # What is the best terminal?
 
 - use your default
 
-## Unicode, Emojis, Fonts
+## Unicode, Emojis, Fonts, Image support (!)
 
 - but think about enriching your output!
 
-- Emojis: :thumbsup: :ballot_box_with_check: :collision: :v: :poop: :speech_balloon: :zap: €
+- Emojis: :thumbsup: :ballot_box_with_check: :collision: :v: :poop: :speech_balloon: :zap: € ★ :star:
+
+```text
+ _______________________________________
+/\                                      \
+\_| You've got to know when to hold 'em |
+  | Know when to fold 'em               |
+  | Know when to walk away              |
+  | And know when to run                |
+  |   __________________________________|_
+   \_/____________________________________/
+```
 
 (...this presentation is running in a terminal (`kitty`), not a browser...)
+
+<!-- The Gambler, Kenny Rogers -->
 
 ---
 
@@ -574,6 +591,8 @@ let foo = "bar";
 - https://boxes.thomasjensen.com/docs/
 
 - ascii art boxes
+
+- show all templates: `boxes -l`
 
 - category: unix porn
 
