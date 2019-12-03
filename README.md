@@ -42,3 +42,7 @@ Run `./start-demos.sh`
 
 This starts `tmuxinator`, which in turn starts a demonstration of all tools.
 This will likely fail on your system...
+
+## Your playground: Docker container
+
+In case you want to try some of the tools mentioned during the presentation, you can safely experiment using the provided docker container located in `docker/ubuntu19.10`. Please read the `README.md` within that folder: [docker/ubuntu19.10/README.md](docker/ubuntu19.10/README.md).

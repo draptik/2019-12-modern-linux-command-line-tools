@@ -6,7 +6,7 @@ Without messing up there own system.
 
 Using docker.
 
-The docker container size: ~700MB (based on Ubuntu 19.10)
+The docker container size: **~700MB** (based on Ubuntu 19.10)
 
 # Usage
 
@@ -25,6 +25,10 @@ Within the docker container:
 # switch between `tabs` with `F3` and `F4`
 ./start-demos.sh
 ```
+
+# Fancy stuff won't work out of the box
+
+If you want to try fancy stuff (everything having to do with fonts, emojis, icons) you will need to setup your 'consuming' terminal. This can't easily be provided be a docker container. If you know a solution: I will gladly accept pull requests ;-)
 
 # TODOs
 
