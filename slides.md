@@ -140,12 +140,10 @@ I've come up with a set of rules that describe our reactions to technologies:
 
 ## terminal
   
-- **colors** (16 or more)
-- **fonts** (utf8, ligatures, ...)
+- **colors** (16 or more), **fonts** (utf8, ligatures, ...)
 - **interactions**
     - keyboard shortcuts
     - mouse interaction (copy & paste, scrolling, selection, ...)
-    - image support
 
 ## shell
 
@@ -156,7 +154,11 @@ I've come up with a set of rules that describe our reactions to technologies:
 |     "terminal"     |
 +--------------------+
 |                    |
-|      "shell"       |
+| +--------------+   |
+| |              |   |
+| |    "shell"   |   |
+| |              |   |
+| +--------------+   |
 |                    |
 +--------------------+
 ```
