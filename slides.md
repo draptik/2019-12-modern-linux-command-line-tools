@@ -600,6 +600,20 @@ let foo = "bar";
 
 ---
 
+# monitoring
+
+- htop
+- apachetop
+- ngxtop
+- mtp
+- pg_top
+- powertop
+- iotop
+- iftop
+- nethogs
+
+---
+
 # Resources
 
 - https://twitter.com/climagic
