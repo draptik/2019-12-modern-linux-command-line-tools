@@ -1,18 +1,5 @@
 # TODOs
 
-## Add section about monitoring
-
-top tools
-
-- `htop`
-- docker
-- nginx
-- apache
-- mysql
-- etc.
-
-- atop, htop, apachetop, ngxtop, mtp, pg_top, powertop, iotop, iftop, nethogs
-
 ## Random stuff / brainstorming
 
 ### Ascii
