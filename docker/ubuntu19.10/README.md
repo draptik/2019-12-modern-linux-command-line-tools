@@ -2,7 +2,7 @@
 
 People can try some of the tools which where illustrated in the session.
 
-Without messing up there own system.
+Without messing up their own system.
 
 Using docker.
 
