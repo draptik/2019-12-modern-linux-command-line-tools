@@ -619,6 +619,10 @@ let foo = "bar";
 - https://twitter.com/climagic
 - https://twitter.com/nixcraft
 
+# **Slides & docker examples**
+
+- https://github.com/draptik/2019-12-modern-linux-command-line-tools
+
 ---
 
 # END
