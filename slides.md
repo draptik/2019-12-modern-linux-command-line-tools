@@ -580,6 +580,14 @@ let foo = "bar";
 
 ---
 
+# **lsd**
+
+- https://github.com/Peltoche/lsd
+
+- alternative to `colorls`
+
+---
+
 # **pydf**
 
 - https://www.cyberciti.biz/tips/unix-linux-bsd-pydf-command-in-colours.html
