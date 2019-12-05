@@ -456,6 +456,8 @@ hyperfine --warmup 3 'fd '.*[0-9]\.jpg$' Documents/talks' 'find Documents/talks 
 - interactive piping
 - instant live preview
 
+- interactive REPL for bash piping
+
 - category: search, file manipulation, interactive
 
 ---
@@ -653,10 +655,15 @@ let foo = "bar";
               |_ | _|
               /-'Y'-\
              (__/ \__)
+```
 
 - mosh: https://mosh.org/
-
-```
+- neofetch (unix porn)
+- expect https://likegeeks.com/expect-command/
+- ncdu (interactive df)
+- jq
+- httpie
+- http-prompt
 
 <!--
 echo -e "did I miss your favorite tool?" | boxes -d santa -a c
