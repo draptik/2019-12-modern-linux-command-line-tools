@@ -654,6 +654,8 @@ let foo = "bar";
               /-'Y'-\
              (__/ \__)
 
+- mosh: https://mosh.org/
+
 ```
 
 <!--
